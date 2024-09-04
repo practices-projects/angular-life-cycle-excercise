@@ -1,0 +1,12 @@
+<form action="/submit-form" method="post">
+  <label for="field">field:</label>
+  <input
+    type="text"
+    id="filed"
+    name="field"
+    (input)="onInputChange($event)"
+    required
+  />
+</form>
+
+<p>{{ inputValue }}</p>
