@@ -13,4 +13,8 @@ export class FormComponent {
   onInputChange(event: any): void {
     this.inputValue = event.target.value;
   }
+
+  ngOnDestroy(): void {
+    console.log('destroying form component');
+  }
 }
